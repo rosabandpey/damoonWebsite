@@ -1,0 +1,19 @@
+.statistic_container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    .statistic_icon {
+        color: #2673F3;
+        margin-bottom: 7px;
+        svg {
+            font-size: 100px;
+        }
+    }
+    .statistic_value {
+        direction: ltr;
+        font-weight: 500;
+    }
+    .statistic_title {
+        font-weight: 400;
+    }
+}

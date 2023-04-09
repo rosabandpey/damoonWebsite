@@ -1,0 +1,43 @@
+.sort_filter_container {
+    height: 30px;
+    display: flex;
+    padding: 0 20px;
+    align-items: center;
+    font-size: 11px;
+    background-color: #DBDBDB;
+   
+        grid-column: 1/-1;
+        margin-bottom: -5px;
+    
+    .title {
+        margin-left: 15px;
+        margin-right: 10px;
+    }
+    .btn {
+        font-size: 11px;
+        margin-right: 10px;
+        background-color: transparent;
+    }
+    .btn {
+        height: 36px;
+        border: none;
+        font-size: 18px;
+        padding: 0 12px;
+        cursor: pointer;
+        text-align: center;
+        border-radius: 5px;
+       
+    }
+    .btn.btn_pill {
+        border-radius: 100px;
+    }
+    .btn.btn_sm {
+        height: 20px;
+        font-size: 12px;
+        line-height: 20px;
+    }
+    .btn_info {
+        color: #fff;
+        background-color: #2673f3!important;
+    }
+}

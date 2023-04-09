@@ -1,0 +1,31 @@
+.statistic_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.statistic_container .statistic_icon {
+  color: #2673F3;
+  margin-bottom: 7px;
+}
+
+.statistic_container .statistic_icon svg {
+  font-size: 100px;
+}
+
+.statistic_container .statistic_value {
+  direction: ltr;
+  font-weight: 500;
+}
+
+.statistic_container .statistic_title {
+  font-weight: 400;
+}
+/*# sourceMappingURL=Statistic.module.css.map */

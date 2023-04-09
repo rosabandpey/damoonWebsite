@@ -1,0 +1,94 @@
+.educationBannerSection {
+  background-image: radial-gradient(#357FFA, #094DBE);
+}
+
+.educationBannerSection .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 350px;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  padding-top: 30px;
+  padding-bottom: 60px;
+  max-width: 1320px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.educationBannerSection .container .bannerTitle {
+  font-size: 53px;
+  font-weight: 500;
+  color: #ffffff;
+}
+
+.educationBannerSection .container .titleContent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.educationBannerSection .container .titleContent img {
+  max-width: 100px;
+  margin-left: 20px;
+  height: auto;
+  width: auto;
+}
+
+.educationBannerSection .container .sectionDesc {
+  color: #ffffff;
+  font-weight: 500;
+}
+
+.educationBannerSection .container .socialMediaList {
+  bottom: 18px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+}
+
+.educationBannerSection .container .socialMediaList .socialLink {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #ffffff;
+  margin: 0 10px;
+}
+
+.educationBannerSection .container .socialMediaList .socialLink.insta svg {
+  font-size: 22px;
+}
+
+.educationBannerSection .container .socialMediaList .socialLink svg {
+  width: 1em;
+  height: 1em;
+  font-size: 24px;
+}
+
+@media (max-width: 576px) {
+  .educationBannerSection .container .titleContent {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .educationBannerSection .container .titleContent img {
+    margin-left: 0;
+    margin-bottom: 10px;
+  }
+}
+/*# sourceMappingURL=BannerSection.module.css.map */

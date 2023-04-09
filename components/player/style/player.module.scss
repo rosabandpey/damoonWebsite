@@ -1,0 +1,15 @@
+.player_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    video {
+        width: 100%;
+    }
+    .play_btn {
+        width: 75px;
+        max-width: 15%;
+        cursor: pointer;
+        position: absolute;
+    }
+}

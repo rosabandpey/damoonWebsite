@@ -1,0 +1,38 @@
+.container {
+  max-width: 1320px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.table {
+  width: 100%;
+}
+
+.table, .tr, .td, .th {
+  border: 1px solid #ddd;
+  border-collapse: collapse;
+}
+
+.th {
+  padding: 1rem;
+}
+
+.td {
+  padding: .5rem;
+}
+
+.td img {
+  vertical-align: middle;
+  width: 40px;
+  height: 40px;
+}
+
+.tr {
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.tr:hover {
+  background-color: #ddd;
+}
+/*# sourceMappingURL=AccountNumbers.page.module.css.map */

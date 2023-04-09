@@ -1,0 +1,18 @@
+.education_banner_section {
+    background-image: radial-gradient(#1B61D6, #0E316B);
+    .container {
+        display: flex;
+        min-height: 350px;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        max-width: 1320px;
+        margin-left: auto;
+        margin-right: auto;
+        .banner_title {
+            font-size: 43px;
+            font-weight: 500;
+            color: #ffffff;
+        }
+    }
+}

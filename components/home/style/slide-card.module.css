@@ -1,0 +1,102 @@
+.slider_card_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+  max-width: 800px;
+  color: #000000;
+}
+
+.slider_card_container .card_banner {
+  margin-left: 27px;
+}
+
+.slider_card_container .card_banner img {
+  width: 100%;
+  max-width: 285px;
+  border-radius: 20px;
+}
+
+.slider_card_container .btn_danger {
+  color: #fff;
+  background-color: #f32656 !important;
+}
+
+.slider_card_container .btn.btn_pill {
+  border-radius: 100px;
+}
+
+.slider_card_container .btn.btn_sm {
+  height: 20px;
+  font-size: 12px;
+  line-height: 20px;
+}
+
+.slider_card_container .btn {
+  height: 36px;
+  border: none;
+  font-size: 18px;
+  padding: 0 12px;
+  cursor: pointer;
+  text-align: center;
+  border-radius: 5px;
+  background: #fff;
+  background-color: white;
+}
+
+.slider_card_container .card_content {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.slider_card_container .card_content .card_title {
+  font-size: 25px;
+  line-height: 43px;
+  font-weight: 500;
+  margin-top: 12px;
+  margin-bottom: 8px;
+}
+
+.slider_card_container .card_content .card_text {
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: normal;
+  margin-bottom: 12px;
+}
+
+.slider_card_container .card_content .card_actions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.slider_card_container .card_content .card_actions .btn {
+  margin-left: 10px;
+}
+
+@media (max-width: 992px) {
+  .slider_card_container .card_banner {
+    margin-left: 20px;
+  }
+  .slider_card_container .card_banner img {
+    max-width: 250px;
+  }
+}
+
+@media (max-width: 768px) {
+  .slider_card_container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .slider_card_container .card_banner {
+    margin: 0 auto;
+  }
+  .slider_card_container .card_content .card_text {
+    max-height: 290px;
+    overflow: hidden;
+  }
+}
+/*# sourceMappingURL=slide-card.module.css.map */

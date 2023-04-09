@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,oBAAoB,CAAC;EACjB,OAAO,EAAE,IAAI;EACb,WAAW,EAAE,MAAM;EACnB,cAAc,EAAE,MAAM;CAezB;;AAlBD,AAII,oBAJgB,CAIhB,eAAe,CAAC;EACZ,KAAK,EAAE,OAAO;EACd,aAAa,EAAE,GAAG;CAIrB;;AAVL,AAOQ,oBAPY,CAIhB,eAAe,CAGX,GAAG,CAAC;EACA,SAAS,EAAE,KAAK;CACnB;;AATT,AAWI,oBAXgB,CAWhB,gBAAgB,CAAC;EACb,SAAS,EAAE,GAAG;EACd,WAAW,EAAE,GAAG;CACnB;;AAdL,AAeI,oBAfgB,CAehB,gBAAgB,CAAC;EACb,WAAW,EAAE,GAAG;CACnB",
+    "sources": [
+        "Statistic.module.scss"
+    ],
+    "names": [],
+    "file": "Statistic.module.css"
+}

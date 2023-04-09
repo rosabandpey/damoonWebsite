@@ -1,0 +1,33 @@
+.branches_banner_section {
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.branches_banner_section .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 350px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-width: 1320px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.branches_banner_section .container .banner_title {
+  font-size: 43px;
+  color: #ffffff;
+  font-weight: 500;
+  margin-right: 50px;
+}
+
+.branches_banner_section .container .banner_title + .banner_title {
+  margin-right: 75px;
+}
+/*# sourceMappingURL=banner-section.module.css.map */

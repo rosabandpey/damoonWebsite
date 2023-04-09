@@ -1,0 +1,32 @@
+.key_value_list_container {
+    display: grid;
+    align-items: flex-start;
+    gap: 11px;
+    grid-gap: 11px;
+    grid-template-columns: minmax(135px, auto) 1fr;
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: normal;
+    color: #000000;
+    .key_item,
+    .value_item {
+        align-items: center;
+        display: inline-flex;
+    }
+    .value_item {
+        svg {
+            margin-right: 5px;
+        }
+    }
+    
+    @media(max-width: 576px) {
+        & {
+            gap: 0;
+            grid-gap: 0;
+            grid-template-columns: 1fr;
+            .value_item {
+                margin-bottom: 10px;
+            }
+        }
+    }
+}

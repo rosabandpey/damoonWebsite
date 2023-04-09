@@ -1,0 +1,113 @@
+.staffCardContainer {
+    display: flex;
+    border-radius: 15px;
+    background-color: #DEDEDE;
+    height: 320px;
+    .staffCardContent {
+        flex: 1;
+        padding: 27px 45px 27px 0;
+    }
+    .container {
+        max-width: 1320px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    .staffard_title {
+        font-size: 30px;
+        line-height: 45px;
+        font-weight: 500;
+    }
+    .staff_card_subtitle {
+        font-weight: normal;
+        margin-bottom: 22px;
+    }
+    .staff_post {
+        line-height: 36px;
+        font-weight: normal;
+    }
+    .staff_qoute {
+        display: flex;
+        font-weight: normal;
+        flex-direction: column;
+        svg {
+            font-size: 40px;
+            color: #919191;
+            margin-top: 24px;
+            margin-bottom: 20px;
+        }
+    }
+    .staff_card_social {
+        display: flex;
+        flex-direction: column;
+        .staff_social_list {
+            display: flex;
+            margin-top: auto;
+            align-items: center;
+            justify-content: center;
+            padding: 18px 16px;
+            a {
+                display: flex;
+                margin: 0 8px;
+                font-size: 22px;
+                color: #919191;
+            }
+        }
+    }
+    .staff_card_banner {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        position: relative;
+        border-radius: 15px;
+        img {
+            max-width: 100%;
+            position: absolute;
+            height: auto;
+        }
+    }
+}
+
+
+@media(max-width: 1200px) {
+    .staff_card_container .staff_card_banner img {
+        max-height: 100%;
+        max-width: unset;
+    }
+}
+@media(max-width: 992px) {
+    .staff_card_container {
+        position: relative;
+        .staff_card_content {
+            padding-left: 12px;
+            padding-bottom: 70px;
+        }
+        .staff_card_social {
+            left: 50%;
+            right: 0;
+            bottom: 0;
+            position: absolute;
+        }
+    }
+}
+@media(max-width: 768px) {
+    .staff_card_container {
+        flex-direction: column;
+        .staff_card_content {
+            padding: 15px;
+        }
+        .staff_card_social {
+            position: static;
+        }
+        .staff_card_banner {
+            flex: unset;
+            img {
+                width: 100%;
+                max-width: unset;
+                max-height: unset;
+                position: static;
+            }
+        }
+    }
+}

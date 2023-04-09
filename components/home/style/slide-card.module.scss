@@ -1,0 +1,80 @@
+.slider_card_container {
+    display: flex;
+    margin: 0 auto;
+    max-width: 800px;
+    color: #000000;
+    .card_banner {
+        margin-left: 27px;
+        img {
+            width: 100%;
+            max-width: 285px;
+            border-radius: 20px;
+        }
+    }
+    .btn_danger {
+        color: #fff;
+        background-color: #f32656 !important;
+      }
+      .btn.btn_pill {
+        border-radius: 100px;
+      }
+      .btn.btn_sm {
+        height: 20px;
+        font-size: 12px;
+        line-height: 20px;
+      }
+      .btn {
+        height: 36px;
+        border: none;
+        font-size: 18px;
+        padding: 0 12px;
+        cursor: pointer;
+        text-align: center;
+        border-radius: 5px;
+        background: #fff;
+          background-color: rgb(255, 255, 255);
+      }
+    .card_content {
+        flex: 1;
+        .card_title {
+            font-size: 25px;
+            line-height: 43px;
+            font-weight: 500;
+            margin-top: 12px;
+            margin-bottom: 8px;
+        }
+        .card_text {
+            font-size: 14px;
+            line-height: 24px;
+            font-weight: normal;
+            margin-bottom: 12px;
+        }
+        .card_actions {
+            display: flex;
+            .btn {
+                margin-left: 10px;
+            }
+        }
+    }
+}
+
+@media(max-width: 992px) {
+    .slider_card_container .card_banner {
+        margin-left: 20px;
+        img {
+            max-width: 250px;
+        }
+    }
+}
+@media(max-width: 768px) {
+    .slider_card_container {
+        flex-direction: column;
+    }
+    .slider_card_container .card_banner {
+        margin: 0 auto;
+    }
+    .slider_card_container .card_content .card_text {
+        max-height: 290px;
+        overflow: hidden;
+    }
+}

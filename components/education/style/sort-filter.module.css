@@ -1,0 +1,51 @@
+.sort_filter_container {
+  height: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 11px;
+  background-color: #DBDBDB;
+  grid-column: 1/-1;
+  margin-bottom: -5px;
+}
+
+.sort_filter_container .title {
+  margin-left: 15px;
+  margin-right: 10px;
+}
+
+.sort_filter_container .btn {
+  font-size: 11px;
+  margin-right: 10px;
+  background-color: transparent;
+}
+
+.sort_filter_container .btn {
+  height: 36px;
+  border: none;
+  font-size: 18px;
+  padding: 0 12px;
+  cursor: pointer;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.sort_filter_container .btn.btn_pill {
+  border-radius: 100px;
+}
+
+.sort_filter_container .btn.btn_sm {
+  height: 20px;
+  font-size: 12px;
+  line-height: 20px;
+}
+
+.sort_filter_container .btn_info {
+  color: #fff;
+  background-color: #2673f3 !important;
+}
+/*# sourceMappingURL=sort-filter.module.css.map */

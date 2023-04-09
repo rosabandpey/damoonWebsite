@@ -1,0 +1,24 @@
+.player_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+}
+
+.player_container video {
+  width: 100%;
+}
+
+.player_container .play_btn {
+  width: 75px;
+  max-width: 15%;
+  cursor: pointer;
+  position: absolute;
+}
+/*# sourceMappingURL=player.module.css.map */

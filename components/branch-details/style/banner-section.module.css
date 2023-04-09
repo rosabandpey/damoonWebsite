@@ -1,0 +1,49 @@
+.branch_details_banner_section {
+  background-image: url(../../../assets/img/branch-banner.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.branch_details_banner_section .container_wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 720px;
+}
+
+.branch_details_banner_section .banner_content {
+  width: 100%;
+  padding-top: 20px;
+  margin-top: auto;
+  text-align: center;
+  background: -webkit-gradient(linear, left top, left bottom, from(#19181800), to(#191818)) padding-box;
+  background: linear-gradient(180deg, #19181800 0%, #191818 100%) padding-box;
+}
+
+.branch_details_banner_section .banner_content .banner_title {
+  font-size: 68px;
+  font-weight: 500;
+  color: #ffffff;
+}
+
+.branch_details_banner_section .banner_content .banner_subtitle {
+  font-size: 22px;
+  font-weight: 500;
+  color: #ffffff;
+  margin-bottom: 5px;
+}
+
+.branch_details_banner_section .banner_content .down_icon {
+  color: #ffffff;
+  font-size: 27px;
+}
+/*# sourceMappingURL=banner-section.module.css.map */

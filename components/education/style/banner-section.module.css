@@ -1,0 +1,30 @@
+.education_banner_section {
+  background-image: radial-gradient(#1B61D6, #0E316B);
+}
+
+.education_banner_section .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 350px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-width: 1320px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.education_banner_section .container .banner_title {
+  font-size: 43px;
+  font-weight: 500;
+  color: #ffffff;
+}
+/*# sourceMappingURL=banner-section.module.css.map */

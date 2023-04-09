@@ -1,0 +1,64 @@
+.educationBannerSection {
+    background-image: radial-gradient(#357FFA, #094DBE);
+    .container {
+        display: flex;
+        min-height: 350px;
+        text-align: center;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        position: relative;
+        padding-top: 30px;
+        padding-bottom: 60px;
+        max-width: 1320px;
+margin-left: auto;
+margin-right: auto;
+        .bannerTitle {
+            font-size: 53px;
+            font-weight: 500;
+            color: #ffffff;
+        }
+        .titleContent {
+            display: flex;
+            align-items: center;
+            img {
+                max-width: 100px;
+                margin-left: 20px;
+                height: auto;
+                width: auto;
+            }
+        }
+        .sectionDesc {
+            color: #ffffff;
+            font-weight: 500;
+        }
+        .socialMediaList {
+            bottom: 18px;
+            display: flex;
+            position: absolute;
+            .socialLink {
+                display: flex;
+                color: #ffffff;
+                margin: 0 10px;
+                &.insta svg {
+                    font-size: 22px;
+                }
+                svg {
+                    width: 1em;
+                    height: 1em;
+                    font-size: 24px;
+                }
+            }
+        }
+
+        @media(max-width: 576px) {
+            .titleContent {
+                flex-direction: column;
+                img {
+                    margin-left: 0;
+                    margin-bottom: 10px;
+                }
+            }
+        }
+    }
+}

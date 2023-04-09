@@ -1,0 +1,99 @@
+.gallery_slider_container {
+    .swiper_container {
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 0 47px;
+        align-items: stretch;
+        margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    overflow: hidden;
+    list-style: none;
+    padding: 0;
+    z-index: 1;
+        &.gallery_slider {
+            .swiper_wrapper {
+                align-items: center;
+                justify-content: center;
+            }
+        }
+        .img {
+                
+            width: 100%;
+            
+            height: 100%;
+        }
+        .secImg{
+            width: 100%;
+            
+            height: 105px;
+        }
+        &.thumbnail_slider {
+            margin-top: 22px;
+            .swiper_wrapper {
+                transform: unset !important;
+                justify-content: center;
+                align-items: center;
+                .gallery_banner {
+                    height: auto;
+                    max-height: 65px;
+                    opacity: 0.48;
+                    overflow: hidden;
+                    border: 1px solid #707070;
+                    &.swiper_slide_active {
+                        opacity: 1;
+                    }
+                    &:last-child {
+                        margin-left: 0 !important;
+                    }
+                }
+            }
+        }
+
+        // gallery
+        .gallery_banner {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            img {
+                
+                width: 1000px;
+                aspect-ratio: auto 400 / 267;
+                height: 267px;
+            }
+        }
+
+        // navigation
+        .swiper_button_prev,
+        .swiper_button_next {
+            width: 27px;
+            height: 27px;
+            border-radius: 50%;
+            border: 2px solid #2673F3;
+            &::after {
+                font-size: 14px;
+                color: #2673F3;
+                font-weight: 950;
+            }
+        }
+        .swiper_button_prev {
+            right: 0;
+        }
+        .swiper_button_next {
+            left: 0;
+        }
+    }
+    @media(max-width: 576px) {
+        &gallery-slider .swiper_slide {
+            margin-left: 0 !important;
+        }
+        .swiper_container {
+            padding-left: 0;
+            padding-right: 0;
+        }
+        .swiper_button_prev,
+        .swiper_button_next {
+            display: none;
+        }
+    }
+}

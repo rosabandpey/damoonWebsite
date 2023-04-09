@@ -1,0 +1,44 @@
+.avatar_container {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    .avatar_banner {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 15px;
+        img {
+            width: 220px;
+            max-width: 100%;
+            border-radius: 50%;
+            border: 5px solid #3C81F4;
+        }
+    }
+    .avatar_title {
+        font-size: 25px;
+        font-weight: 500;
+        line-height: 25px;
+    }
+    .avatar_subtitle {
+        font-size: 21px;
+        font-weight: normal;
+    }
+    .avatar_text {
+        font-size: 14px;
+        font-weight: normal;
+    }
+    .avatar_social_list {
+        display: flex;
+        padding: 5px 0;
+        align-items: center;
+        a {
+            margin: 0 8px;
+            display: flex;
+            color: #919191;
+            svg {
+                font-size: 21px;
+            }
+        }
+    }
+}

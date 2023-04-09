@@ -1,0 +1,35 @@
+.branch_details_banner_section {
+    background-image: url(../../../assets/img/branch-banner.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    .container_wrapper {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        min-height: 720px;
+    }
+    .banner_content {
+        width: 100%;
+        padding-top: 20px;
+        margin-top: auto;
+        text-align: center;
+        background: linear-gradient(180deg, #19181800 0%, #191818 100%) padding-box;
+        .banner_title {
+            font-size: 68px;
+            font-weight: 500;
+            color: #ffffff;
+        }
+        .banner_subtitle {
+            font-size: 22px;
+            font-weight: 500;
+            color: #ffffff;
+            margin-bottom: 5px;
+        }
+        .down_icon {
+            color: #ffffff;
+            font-size: 27px;
+        }
+    }
+}
