@@ -9,7 +9,7 @@ export default function aboutUs({ managerList }) {
   return (
     <>
      <Head>
-      <title>کارگزاری آتیه | درباره ما</title>
+      <title> گروه دوچرخه سواری دامون | درباره ما</title>
     </Head>
       <AboutUs managerList={managerList} />
      

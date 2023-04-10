@@ -23,20 +23,20 @@ import VideoIcon from '@mui/material/SvgIcon';
 
 
 export const bannerSectionData = {
-    title: 'کارگزاری آتیه' ,
-    subtitle: 'بیش از ربع قرن تجربه خدمت گذاری',
+    title: 'دوچرخه سواری دامون' ,
+    subtitle: 'بزرگ ترین گروه دوچرخه سواری',
     socialLink: [
         {
             icon: <TelegramIcon />,
-            link: 'https://t.me/s/AtiehBroker',
+            link: 'https://t.me/s/damoonbiker',
         },
         {
             icon: <InstagramIcon />,
-            link: 'https://www.instagram.com/atiehbroker/',
+            link: 'https://www.instagram.com/damoonbikers/',
         },
         {
             icon: <VideoIcon />,
-            link: 'https://www.aparat.com/Atieh-Broker',
+            link: 'https://www.aparat.com/damoonbiker',
         },
     ],
 };

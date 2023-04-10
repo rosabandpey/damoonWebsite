@@ -16,6 +16,12 @@ footer.footer_section .first_footer .col_title {
 
 footer.footer_section .first_footer .footer_col {
   margin-bottom: 16px;
+  width: 10%;
+}
+
+footer.footer_section .first_footer .footer_col_right {
+  width: 90%;
+  margin-bottom: 16px;
 }
 
 footer.footer_section .first_footer .footer_desc {
@@ -31,6 +37,7 @@ footer.footer_section .container {
   margin-right: auto;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  width: 100%;
 }
 
 footer.footer_section .container.secound_footer {

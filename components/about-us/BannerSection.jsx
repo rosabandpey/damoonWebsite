@@ -1,4 +1,4 @@
-import logo from '../../assets/img/white-logo.png';
+import logo from '../../assets/img/logo.jpg';
 import Image from 'next/image'
 import styles from './style/BannerSection.module.scss'
 
@@ -10,7 +10,7 @@ export default function BannerSection(props) {
         <section className={styles.educationBannerSection}>
             <div className={styles.container}>
                 <div className={styles.titleContent}>
-                    <Image src={logo} alt="آتیه" />
+                    <Image src={logo} alt="دامون" />
                     <div className={styles.titles}>
                         <h2 className={styles.bannerTitle}>{data?.title}</h2>
                         <h3 className={styles.sectionDesc}>{data?.subtitle}</h3>

@@ -13,13 +13,14 @@
 
 .slider_card_container .card_banner img {
   width: 100%;
+  height: 100%;
   max-width: 285px;
   border-radius: 20px;
 }
 
 .slider_card_container .btn_danger {
   color: #fff;
-  background-color: #f32656 !important;
+  background-color: #Ff2e17 !important;
 }
 
 .slider_card_container .btn.btn_pill {
@@ -40,8 +41,6 @@
   cursor: pointer;
   text-align: center;
   border-radius: 5px;
-  background: #fff;
-  background-color: white;
 }
 
 .slider_card_container .card_content {
@@ -69,10 +68,44 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
 }
 
 .slider_card_container .card_content .card_actions .btn {
   margin-left: 10px;
+}
+
+.programs_content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.programs_title {
+  font-size: 25px;
+  line-height: 43px;
+  font-weight: 500;
+  margin: auto;
+  width: 50%;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.card {
+  margin-bottom: 20px;
 }
 
 @media (max-width: 992px) {

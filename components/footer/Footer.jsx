@@ -11,20 +11,24 @@ export default function Footer(props) {
     return (
         <footer className={styles.footer_section}>
             <div className={[styles.container , styles.first_footer].join(' ') }>
-                <div className={[styles.footer_col , styles.about_col].join(' ') }>
-                    <h6 className={styles.col_title}>درباره کارگزاری</h6>
+                <div className={[styles.footer_col_right , styles.about_col].join(' ') }>
+                    <h6 className={styles.col_title}>گروه دوچرخه‌سواری دامون</h6>
                     <p className={styles.footer_desc}>
-                        کارگزاری آتیه همواره در ارائه
-                        با کیفیت ترین و بروزترین خدمات تلاش روز افزون داشته تا با توجه
-                        به گسترش بازار و حجم معاملات مشتریان این کارگزاری نسبت به سایرین
-                        بیشترین پایداری را در خدمات دریافتی خود تجربه کنند و بتوانند در لحظه
-                        بهترین های بازار را انتخاب کنند. با توجه به افزایش تعداد مشتریان
-                        و کارگزاری آتیه نیز خدمات و نیروی انسانی خود را افزایش داده تا
-                        مشتریان بهترین تجربه را در تمام لحظات ارتباط خود با کارگزاری حس کنند.
+                    گروه دوچرخه‌سواری دامون در ابتدای سال ۱۳۹۸ با هدف ترویج دوچرخه‌سواری شهری، تشویق مردم به استفاده از دوچرخه بعنوان وسیله نقلیه و کمک در کم شدن ترافیک و آلودگی هوا تاسیس شد.
+در طول این چهار سال فعالیت، دامون موفق به تحویل حداقل ۵۰۰ رکابزن به جامعه دوچرخه‌سواری شده است.
+و در هر برنامه‌ی هفتگی شهری بصورت میانگین ۵۰ دوچرخه‌سوار را با حفظ امنیت و سلامت، از مبدا به مقاصد مختلف می‌برد.
+تنوع افراد یکی از ویژگی‌های اصلی گروه دامون می‌باشد، در این گروه افراد در تمامی رده‌های سنی، اجتماعی، شغلی و تحصیلی مانند یک خانواده متحد، در کنار یک‌دیگر قرار دارند.
+دامون در دوران سخت همه‌گیری کرونا توانست افراد بسیاری را به سمت دوچرخه تشویق کرده و گامی مهم در مقابله با فضای یاس جامعه بردارد.
+این گروه پس از دو سال فعالیت با استقبال بالای افراد، اقدام به برگزاری تورهای خارج از شهر تهران و طبیعت زیبای ایران نمود و تجربه‌های تکرارنشدنی را برای عموم افراد با هر توان دوچرخه‌سواری رقم زد.
+رسالت دامون همیشه تاثیرگذاری در جامعه، تمرین جامعه مدنی، احترام به قانون و تربیت افرادی مطالبه‌گر و قانون‌مدار بوده و خواهد بود
                     </p>
                 </div>
-
-                <div className={[styles.footer_col , styles.category_col].join(' ') }>
+                <div className={styles.footer_col}>
+                    <a target="_blank" href="https://trustseal.enamad.ir/?id=234513&amp;Code=EgjzOzgQPL0GfcMihusD">
+                        <img  src="https://Trustseal.eNamad.ir/logo.aspx?id=234513&amp;Code=EgjzOzgQPL0GfcMihusD" alt="" style={{cursorPointer: 'cursor'}} id="EgjzOzgQPL0GfcMihusD" />
+                    </a>
+                </div>
+                {/* <div className={[styles.footer_col , styles.category_col].join(' ') }>
                     <h6 className={styles.col_title}>شعب</h6>
                     <ul className={styles.footer_links}>
                         <li>
@@ -40,7 +44,7 @@ export default function Footer(props) {
                             <Link href="/branches">برترین شعب</Link>
                         </li>
                     </ul>
-                </div>
+                </div> */}
 
                 <div className={[styles.footer_col , styles.quick_links_col].join(' ') }>
                     <h6 className={styles.col_title}>دسترسی سریع</h6>
@@ -63,34 +67,30 @@ export default function Footer(props) {
                     </ul>
                 </div>
 
-                <div className={styles.footer_col}>
-                    <a target="_blank" href="https://trustseal.enamad.ir/?id=234513&amp;Code=EgjzOzgQPL0GfcMihusD">
-                        <img  src="https://Trustseal.eNamad.ir/logo.aspx?id=234513&amp;Code=EgjzOzgQPL0GfcMihusD" alt="" style={{cursorPointer: 'cursor'}} id="EgjzOzgQPL0GfcMihusD" />
-                    </a>
-                </div>
+               
                 <hr />
             </div>
             <div className={[styles.container , styles.secound_footer].join(' ') }>
                 <div className={styles.copy_right_col}>
                     <p className={styles.copyright_text}>
                         &copy;
-                        تمامی حقوق متعلق به کارگزاری آتیه است.
+                        تمامی حقوق متعلق به گروه دوچرخه‌سواری دامون است.
                     </p>
                 </div>
                 <div className={styles.social_col}>
                     <ul className={styles.social_icons}>
                         <li>
-                            <a className={[styles.social_link , styles.facebook].join(' ') } href="https://www.instagram.com/atiehbroker/">
+                            <a className={[styles.social_link , styles.facebook].join(' ') } href="https://www.instagram.com/damoonbikers/">
                                 <InstagramIcon />
                             </a>
                         </li>
                         <li>
-                            <a className={[styles.social_link , styles.twitter].join(' ') } href="https://t.me/s/AtiehBroker">
+                            <a className={[styles.social_link , styles.twitter].join(' ') } href="https://t.me/s/damoonbiker">
                                 <TelegramIcon />
                             </a>
                         </li>
                         <li>
-                            <a className={[styles.social_link , styles.dribbble].join(' ') } href="https://www.aparat.com/Atieh-Broker">
+                            <a className={[styles.social_link , styles.dribbble].join(' ') } href="https://www.aparat.com/damoonbiker">
                                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" className={styles.icon_3q_Xb}>
                                     <path d="M4.00079 6.86359C4.18594 6.05798 4.33899 5.24347 4.56313 4.44874C5.04598 2.74158 6.81396 1.70305 8.56614 2.07494C9.26376 2.22331 9.95841 2.38205 10.654 2.53734C10.713 2.55477 10.771 2.57524 10.8278 2.59866C7.90309 3.03831 5.65966 4.47742 4.00079 6.86359Z" fill="currentColor"></path>
                                     <path d="M21.4027 10.8242C20.9638 7.90642 19.5266 5.66367 17.1291 4.00449C17.3444 4.05361 17.5595 4.10306 17.7744 4.15285C18.3017 4.27104 18.8309 4.38281 19.3567 4.50793C20.2285 4.71282 20.9855 5.2514 21.4658 6.0084C21.9461 6.76539 22.1115 7.68063 21.9265 8.55822C21.7809 9.25553 21.6199 9.94986 21.4649 10.6452C21.4545 10.6892 21.4338 10.7342 21.4027 10.8242Z" fill="currentColor"></path>
@@ -100,11 +100,7 @@ export default function Footer(props) {
                                 </svg>
                             </a>
                         </li>
-                        <li>
-                            <a className={[styles.social_link , styles.linkedin].join(' ') } href="https://www.linkedin.com/company/atieh-broker/about">
-                                <LinkedInIcon />
-                            </a>
-                        </li>
+                      
                     </ul>
                 </div>
             </div>

@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "AAAA,AAAA,mBAAmB,CAAC;EAChB,aAAa,EAAE,IAAI;CACtB;;AAGD,AAAA,OAAO,AAAA,qBAAqB,CAAC;EACzB,MAAM,EAAE,kBAAkB;CAC7B;;AAED,MAAM,CAAC,MAAM,MAAM,SAAS,EAAE,KAAK;EAC/B,AAAA,OAAO,AAAA,qBAAqB,CAAC;IACzB,MAAM,EAAE,mBAAmB;GAC9B",
-    "sources": [
-        "Branches.page.module.scss"
-    ],
-    "names": [],
-    "file": "Branches.page.module.css"
-}

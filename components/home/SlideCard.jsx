@@ -22,13 +22,13 @@ export default function SlideCard(props) {
                     {cardData?.text}
                 </p>
                 <div className={styles.card_actions}>
+                    <p className={[styles.btn , styles.btn_sm , styles.btn_pill , styles.card_text].join(' ')}
+                      >
+                        قیمت : {cardData?.price}
+                    </p>
                     <a className={[styles.btn , styles.btn_sm , styles.btn_pill , styles.btn_danger].join(' ')}
                         href={cardData?.link}>
-                        مقاله
-                    </a>
-                    <a className={[styles.btn , styles.btn_sm , styles.btn_pill , styles.btn_danger].join(' ')}
-                        href={cardData?.link}>
-                        تحلیل
+                        ثبت نام
                     </a>
                 </div>
             </div>

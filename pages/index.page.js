@@ -1,12 +1,12 @@
 import HomePage from './home/HomePage.page'
-import {sample,whyAtiehSectionData,introSectionData,relatedSiteData} from '../pages/home/constants'
+import {sample,introSectionData,relatedSiteData,lastPrograms} from '../pages/home/constants'
 import Head from 'next/head'
 
-export default function Home({slideData,whyAtiehSectionData,introSectionData,relatedSiteData}) {
+export default function Home({slideData,introSectionData,relatedSiteData,programs}) {
   return (
     <>
    
-    <HomePage  slideData={slideData} whyAtiehSectionData={whyAtiehSectionData} introSectionData={introSectionData} relatedSiteData={relatedSiteData}/>
+    <HomePage  slideData={slideData}  introSectionData={introSectionData} relatedSiteData={relatedSiteData} programs={lastPrograms} />
 
     </>
   )
@@ -16,8 +16,8 @@ export default function Home({slideData,whyAtiehSectionData,introSectionData,rel
 export const getStaticProps = async () => {
   return {
     props: {
-      slideData: [sample],
-      whyAtiehSectionData:whyAtiehSectionData,
+      programs:lastPrograms,
+      slideData: sample,
       introSectionData:introSectionData,
       relatedSiteData:relatedSiteData,
     },

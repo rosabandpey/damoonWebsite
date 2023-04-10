@@ -1,42 +1,31 @@
-import { Helmet, HelmetProvider } from "react-helmet-async";
-import MainSection from "../../components/home/MainSection";
+
+
 import BlogSlider from "../../components/home/BlogSlider";
-import WhyAtiehSection from "../../components/home/WhyAtiehSection";
 import IntroSection from "../../components/home/IntroSection";
 import RelatedSite from "../../components/home/RelatedSite";
-import videoPoster from "../../assets/img/video-poster.png";
-import Footer from "../../components/footer/Footer";
-import Header from "../../components/header/Header";
 import Head from "next/head";
-// import video from '../../assets/sample.mp4';
+import LastPrograms from "../../components/programs/lastPrograms";
 
 
 
 
-// const videoTutorialData = {
-//   title: "ویدیوهای آموزشی",
-//   linkTitle: "مشاهده همه ویدیوهای آموزشی",
-//   video: "video",
-//   poster: videoPoster,
-// };
 
 
- function HomePage({slideData,whyAtiehSectionData,introSectionData,relatedSiteData}) {
+
+ function HomePage({slideData,programs}) {
 
 
   return (
     <>
      
      <Head>
-      <title>کارگزاری آتیه | خانه</title>
+      <title> گروه دوچرخه‌سواری دامون | خانه</title>
     </Head>
 
-      <MainSection />
-      <BlogSlider title="مقاله‌ها و اطلاعیه‌ها" slideData={slideData} />
-      <WhyAtiehSection data={whyAtiehSectionData} />
-      <IntroSection data={introSectionData} />
-      {/* <VideoTutorial data={videoTutorialData}/> */}
-      <RelatedSite data={relatedSiteData} />
+      
+      <BlogSlider title="سفرهای پیش رو" slideData={slideData} />
+      <LastPrograms programs={programs} title="برنامه های انجام شده"/>
+   
      
      
     </>

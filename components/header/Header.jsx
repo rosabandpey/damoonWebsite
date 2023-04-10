@@ -70,7 +70,7 @@ export default function Header(props) {
                                         onClick={() => openMenu(menu?.id)}
                                     >
                                         <Link
-                                            href=''
+                                            href={menu.link}
                                             onClick={navClick}
                                         >
                                             {menu?.title}
@@ -81,76 +81,20 @@ export default function Header(props) {
                         }
                         <li className={[styles.nav_item , styles.login_btn].join(' ')}>
                             <a className={[styles.btn , styles.btn_pill , styles.btn_danger].join(' ')} href="http://silver.atieh-broker.ir">
-                                ورود به سایت 
+                               ثبت نام
                             </a>
                         </li>
                     </ul>
                     <div className={styles.left_side}>
                         <a className={[styles.btn , styles.btn_pill , styles.btn_danger].join(' ')} href="http://silver.atieh-broker.ir">
-                            ورود به سایت 
+                        ثبت نام
                         </a>
                         <span className={styles.toggle_btn} onClick={toggleNav}>
                             <ReorderIcon />
                         </span>
                     </div>
                 </nav>
-                {
-                    !menuCat ? null :
-                        <section className={styles.mega_menu_section}>
-                            <div className={styles.container}>
-                                <div className={styles.menu_side}>
-                                    <ul className={styles.menu_category_list}>
-                                        {
-                                            megaMenuData[menuCat].map((menu, i) => (
-                                                <li key={i} className={styles.menu_category_item}>
-                                                    <div className={styles.menu_category_title}>
-                                                        <Link
-                                                            onClick={navClick}
-                                                            href=''
-                                                        >
-                                                            {menu?.title}
-                                                        </Link>
-                                                    </div>
-                                                    <ul className={styles.submenu_list}>
-                                                        {
-                                                            (menu?.submenu || []).map((submenu, j) => (
-                                                                <li key={j} className={styles.submenu_list_item}>
-                                                                    {
-                                                                        submenu?.link ?
-                                                                            // <Link to={submenu.link}
-                                                                            //     onClick={navClick}
-                                                                            // >
-                                                                            //     {submenu?.title}
-                                                                            // </Link>
-                                                                            (!submenu.external) ?
-                                                                                <Link href={submenu?.link}
-                                                                                    onClick={() => navClick(true)}
-                                                                                    
-                                                                                >
-                                                                                    {submenu?.title}
-                                                                                </Link>
-                                                                                :
-                                                                                <a href={submenu?.link} target="_blank">{submenu?.title}</a>
-
-                                                                            : submenu?.title
-                                                                    }
-                                                                </li>
-                                                            ))
-                                                        }
-                                                    </ul>
-                                                </li>
-                                            ))
-                                        }
-                                    </ul>
-                                </div>
-                                <div className={styles.chart_side}>
-                                    <figure className={styles.chart_banner}>
-                                        <Image src={chartImg} alt="candle chart" />
-                                    </figure>
-                                </div>
-                            </div>
-                        </section>
-                }
+              
             </section>
         </header>
     );

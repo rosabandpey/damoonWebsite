@@ -2,16 +2,12 @@ export const menuList = [
     {
         id: 'investment',
         title: 'صفحه اصلی',
-        link: ''
+        link: '/'
     },
-    // {
-    //     id: 'education',
-    //     title: 'آموزش',
-    //     link:'/education'
-    // },
+  
     {
         id: 'branches',
-        title: 'مقالات',
+        title: 'مقالات آموزشی',
         link: '/branches'
     },
     {

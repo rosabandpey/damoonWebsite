@@ -43,109 +43,41 @@ export default function AboutUs({
            
             <BannerSection data={bannerSectionData} />
             <br /><br />
-            {/* <section className="accounts">
-                <div className="row head">
-                    <span>نام بانک</span>
-                    <span>شماره حساب</span>
-                    <span>نام شعبه</span>
-                    <span>کد شعبه</span>
-                    <span>کد شبا</span>
-                </div>
-                {
-                    accounts.map(ac => {
-                        return <div class="row">
-                            
-                            <span><img src={ac.acf.BankLogoSrc} alt="آتیه"/> {ac.title.rendered}</span>
-                            <span>{ac.acf.AccountNumber}</span>
-                            <span>{ac.acf.BranchTitle}</span>
-                            <span>{ac.acf.BranchCode}</span>
-                            <span>{ac.acf.ShabaNum}</span>
-                        </div>
-                    })
-                }
-            </section> */}
+           
             <section className={styles.aboutUsContentSection}>
                 <div className={styles.container}>
                     {/* <Breadscrumb itemList={breadcrumbData}/> */}
                     <h2 className={styles.main_title}>
-                        پیشرفت در ارائه بهترین خدمات
+                       بزرگ ترین گروه دوچرخه‌سواری
                     </h2>
                     <p className={styles.section_desc}>
-                        کارگزاری آتیه همواره در ارائه
-                        با کیفیت ترین و بروزترین خدمات تلاش روز افزون داشته تا با توجه
-                        به گسترش بازار و حجم معاملات مشتریان این کارگزاری نسبت به سایرین
-                        بیشترین پایداری را در خدمات دریافتی خود تجربه کنند و بتوانند در لحظه
-                        بهترین های بازار را انتخاب کنند. با توجه به افزایش تعداد مشتریان
-                        و کارگزاری آتیه نیز خدمات و نیروی انسانی خود را افزایش داده تا
-                        مشتریان بهترین تجربه را در تمام لحظات ارتباط خود با کارگزاری حس کنند.
+                    گروه دوچرخه‌سواری دامون در ابتدای سال ۱۳۹۸ با هدف ترویج دوچرخه‌سواری شهری، تشویق مردم به استفاده از دوچرخه بعنوان وسیله نقلیه و کمک در کم شدن ترافیک و آلودگی هوا تاسیس شد.
+در طول این چهار سال فعالیت، دامون موفق به تحویل حداقل ۵۰۰ رکابزن به جامعه دوچرخه‌سواری شده است.
+و در هر برنامه‌ی هفتگی شهری بصورت میانگین ۵۰ دوچرخه‌سوار را با حفظ امنیت و سلامت، از مبدا به مقاصد مختلف می‌برد.
+تنوع افراد یکی از ویژگی‌های اصلی گروه دامون می‌باشد، در این گروه افراد در تمامی رده‌های سنی، اجتماعی، شغلی و تحصیلی مانند یک خانواده متحد، در کنار یک‌دیگر قرار دارند.
+دامون در دوران سخت همه‌گیری کرونا توانست افراد بسیاری را به سمت دوچرخه تشویق کرده و گامی مهم در مقابله با فضای یاس جامعه بردارد.
+این گروه پس از دو سال فعالیت با استقبال بالای افراد، اقدام به برگزاری تورهای خارج از شهر تهران و طبیعت زیبای ایران نمود و تجربه‌های تکرارنشدنی را برای عموم افراد با هر توان دوچرخه‌سواری رقم زد.
+رسالت دامون همیشه تاثیرگذاری در جامعه، تمرین جامعه مدنی، احترام به قانون و تربیت افرادی مطالبه‌گر و قانون‌مدار بوده و خواهد بود
                     </p>
-                    <div className={styles.statistic_content}>
+                    {/* <div className={styles.statistic_content}>
                         {
                             statisticData.map((item, i) => (
                                 <Statistic key={i} data={item} />
                             ))
                         }
-                    </div>
-                    <p className={styles.section_desc}>
-                        شرکت کارگزاری آتیه در سال ١۳۷۴ در اداره ثبت شرکت های تهران ثبت گردید و فعالیت خود را در بورس اوراق بهادار آغاز نموده است. سرمایه شرکت کارگزاری آتیه در حال حاضر مبلغ ١۲۰ میلیارد ریال است که تا پایان سال ١۴۰١، هیأت مدیره مصمم به افزایش سرمایه شرکت به ١۰۰۰ میلیارد ریال می باشد. همچنین در راستای توسعه و ارتقای خدمات کارگزاری آتیه، بورس کلا، صندوق اختصاصی بازارگردانی آتیه باران و هلدینگ آتیه مداران راه اندازی و نیز در سال آتی، تأسیس شرکت سبد گردانی و سپس گروه خدمات مالی بازار سرمایه در دستور کار شرکت خواهد بود.
-                    </p>
+                    </div> */}
+                    
                 </div>
             </section>
             <section>
                 <div className={styles.container}>
-                    <StaffCard data={staffCardData} />
+                    {/* <StaffCard data={staffCardData} /> */}
                 </div>
             </section>
             <section className={styles.manager_section}>
-                <div className={styles.container}>
-                    <h3 className={styles.main_title}>
-                        مدیران کارگزاری
-                    </h3>
-                    <div className={[styles.manager_list, styles.double].join(' ') }>
-                        {
-                            managerList.slice(0, 2).map((manager, i) => (
-                                <Avatar key={i} data={manager} />
-                            ))
-                        }
-                    </div>
-                    <div className={[styles.manager_list , styles.third].join(' ')}>
-                        {
-                            managerList.slice(2, 5).map((manager, i) => (
-                                <Avatar key={i} data={manager} />
-                            ))
-                        }
-                    </div>
-                    <div className={[styles.manager_list , styles.third].join(' ')}>
-                        {
-                            managerList.slice(5, 7).map((manager, i) => (
-                                <Avatar key={i} data={manager} />
-                            ))
-                        }
-                    </div>
-                </div>
+               
             </section>
-            {/* <section className="gallery_section">
-                <div className="container">
-                    <h3 className="main_title">
-                        گالری تصاویر
-                    </h3>
-                    <GallerySlider slideData={galleryList} />
-                </div>
-            </section> */}
-            {/* <section className="license_section">
-                <div className="container">
-                    <h3 className="main_title">
-                        مجوزها
-                    </h3>
-                    <div className="license_list">
-                        {
-                            licenseList.map((item, i) => (
-                                <LicenseCard key={i} {...item} />
-                            ))
-                        }
-                    </div>
-                </div>
-            </section> */}
+           
         </>
     );
 }
