@@ -55,6 +55,48 @@ export const lastPrograms = [
 
 
 
+export const educationalContents = [
+  {
+    title: "نحوه تعویض دنده",
+
+    src: yazd,
+
+    link: "#",
+    description:"این سفر در اسفند ماه 1401 برگزار شد"
+  },
+  {
+    title: "شستشوی دوچرخه",
+
+    src: gheshm,
+
+    link: "#",
+    description:"این سفر در بهمن ماه 1401 برگزار شد"
+  },
+];
+
+
+export const weblogContents = [
+  {
+    title: "مسیر دوچرخه یزد به تفت",
+
+    src: yazd,
+
+    link: "#",
+    description:"این سفر در اسفند ماه 1401 برگزار شد"
+  },
+  {
+    title: "رکاب زنی همگانی شهر تهران",
+
+    src: gheshm,
+
+    link: "#",
+    description:"این سفر در بهمن ماه 1401 برگزار شد"
+  },
+];
+
+
+
+
 export const introSectionData = {
   title: {
     text: "بهترین سهام را در بازار انتخاب کنید.",

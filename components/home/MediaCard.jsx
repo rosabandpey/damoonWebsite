@@ -20,15 +20,14 @@ export default function MediaCard({title,src,description,link}) {
     <Image
                     src={src}
                     alt={title}
+                    className={styles.cardImg}
                 />
             </figure>
             <div className={styles.card_content}>
-                <h3 className={styles.card_title}>
+                <h3 className={styles.card_heading}>
                     {title}
                 </h3>
-                <p className={styles.card_text}>
-                    {description}
-                </p>
+                
                 </div>
      
       <CardActions>

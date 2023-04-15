@@ -2,13 +2,21 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin: 0 auto;
-  max-width: 800px;
+  max-width: 75%;
   color: #000000;
 }
 
 .slider_card_container .card_banner {
   margin-left: 27px;
+  width: 100%;
 }
 
 .slider_card_container .card_banner img {
@@ -16,6 +24,11 @@
   height: 100%;
   max-width: 285px;
   border-radius: 20px;
+}
+
+.slider_card_container .card_banner .cardImg {
+  width: 100%;
+  height: 100%;
 }
 
 .slider_card_container .btn_danger {
@@ -50,7 +63,7 @@
 }
 
 .slider_card_container .card_content .card_title {
-  font-size: 25px;
+  font-size: 20px;
   line-height: 43px;
   font-weight: 500;
   margin-top: 12px;
@@ -62,6 +75,15 @@
   line-height: 24px;
   font-weight: normal;
   margin-bottom: 12px;
+}
+
+.slider_card_container .card_content .card_heading {
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: bold;
+  margin-bottom: 12px;
+  color: #494646 !important;
+  width: 150px;
 }
 
 .slider_card_container .card_content .card_actions {
@@ -106,6 +128,8 @@
 
 .card {
   margin-bottom: 20px;
+  border: 1px #2b2828;
+  border-radius: 20px;
 }
 
 @media (max-width: 992px) {
