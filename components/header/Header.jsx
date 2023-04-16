@@ -7,12 +7,16 @@ import logo from '../../assets/img/logo.jpg';
 // import './style/header.less';
 import Image from 'next/image'
 import Link from 'next/link';
+import CustomModal from '../modal/CustomModal';
+import  RegisterForm  from '../home/RegisterForm';
 
 export default function Header(props) {
 
     const [menuCat, setMenuCat] = useState(null);
     const [navOpened, setNavOpened] = useState(false);
-
+    const [open, setOpen] = useState(false);
+    const handleOpen = () => setOpen(true);
+    const handleClose = () => setOpen(false);
     useEffect(() => {
         // add when mounted
         document.addEventListener("click", closeMenu);  // return function to be called when unmounted
@@ -46,7 +50,13 @@ export default function Header(props) {
         setNavOpened(false);
     }
 
+    const handleRegister=()=>{
+  
+        setOpen(true)
+    }
+
     return (
+        <>
         <header className={styles.header_wrapper} onClick={dontClose}>
             <section className={styles.header_section}>
                 <nav className={styles.container}>
@@ -79,14 +89,10 @@ export default function Header(props) {
                                 </li>
                             ))
                         }
-                        <li className={[styles.nav_item , styles.login_btn].join(' ')}>
-                            <a className={[styles.btn , styles.btn_pill , styles.btn_danger].join(' ')} href="http://silver.atieh-broker.ir">
-                               ثبت نام
-                            </a>
-                        </li>
+                    
                     </ul>
                     <div className={styles.left_side}>
-                        <a className={[styles.btn , styles.btn_pill , styles.btn_danger].join(' ')} href="http://silver.atieh-broker.ir">
+                        <a className={[styles.btn , styles.btn_pill , styles.btn_danger].join(' ')} onClick={handleRegister}>
                         ثبت نام
                         </a>
                         <span className={styles.toggle_btn} onClick={toggleNav}>
@@ -97,5 +103,14 @@ export default function Header(props) {
               
             </section>
         </header>
+     
+        {
+            open && 
+        
+        <CustomModal open={open} handleClose={handleClose}>
+        <RegisterForm />
+        </CustomModal>
+        }
+           </>
     );
 }

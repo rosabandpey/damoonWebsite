@@ -1,5 +1,6 @@
 import React from "react";
-import MediaCard from "../home/MediaCard";
+import MediaCard from "../card/MediaCard";
+
 import styles from "../home/style/slide-card.module.scss";
 
 export default function LastPrograms(props) {
