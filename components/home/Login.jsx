@@ -1,8 +1,8 @@
 import { Box, Divider, FormLabel, Grid, Paper, Typography,} from "@mui/material";
 import React, { useState }  from "react";
 import Controls from "../Controls/Controls";
-
-
+import user from '../../assets/img/user.png'
+import Image from 'next/image'
 
 import styles from './style/Login.module.css'
 
@@ -82,7 +82,17 @@ export default function Login({ handleClose }) {
 
   return (
     <>
+
+    
     <div className={styles.container}>
+
+    <Image
+                    src={user}
+                    alt='user'
+                    className={styles.cardImg}
+                />
+
+                
         <Typography id="modal-modal-title" variant="h6" component="h2"  sx={{
             mb: 1,
             fontFamily: "IRANSans",
