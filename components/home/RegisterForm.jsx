@@ -16,7 +16,7 @@ import { BlOOD_GROUP } from "./constant/BloodGroup";
 import { checkNationalCode } from "./util/checkNationalCode";
 import { checkMobile } from "./util/checkMobile";
 
-export default function RegisterForm({ onSubmit }) {
+export default function RegisterForm({ handleClose }) {
  
 
   const [alert, setAlert] = useState(false);
@@ -60,6 +60,10 @@ export default function RegisterForm({ onSubmit }) {
     setAlert(true);
     setLabelAlert('عملیات با موفقیت انجام شد');
     setCheckAlert((prev) => !prev);
+    setTimeout(() => {
+      handleClose()
+    }, 3000);
+   
   };
 
  
@@ -120,7 +124,7 @@ const inputLeftSideListGeneratorArray = [
 const selectListGeneratorArray = [
    
     { title: "جنسیت", options: GENDER, name: "gender", },
-    { title: "گروه خونی", options: BlOOD_GROUP, name: "gender", },
+    { title: "گروه خونی", options: BlOOD_GROUP, name: "bloodGroup", },
   ];
 
   console.log("errors", errors);

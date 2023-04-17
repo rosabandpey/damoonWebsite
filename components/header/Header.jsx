@@ -108,7 +108,7 @@ export default function Header(props) {
             open && 
         
         <CustomModal open={open} handleClose={handleClose}>
-        <RegisterForm />
+        <RegisterForm handleClose={handleClose} />
         </CustomModal>
         }
            </>
