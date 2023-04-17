@@ -94,7 +94,7 @@ export const weblogContents = [
     src: hamegani,
 
     link: "#",
-    description:"بیدود، تجربه ای که هنوز قضاوت نمی توان کرد"
+    description:"رکاب‌زنی در شلوغی پایتخت"
   },
 ];
 
