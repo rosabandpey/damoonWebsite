@@ -7,6 +7,7 @@ import Head from "next/head";
 import LastPrograms from "../../components/programs/lastPrograms";
 import styles from './Home.module.scss'
 import { educationalContents, weblogContents } from "./constants";
+import Login from "../../components/home/Login";
 
 
 
@@ -23,9 +24,14 @@ import { educationalContents, weblogContents } from "./constants";
       <title> گروه دوچرخه‌سواری دامون | خانه</title>
     </Head>
 
-      
+      <div className={styles.flexRow}>
+      <Login />
       <BlogSlider title="سفرهای پیش رو" slideData={slideData} />
+     
+      </div>
+     
 <div className={styles.row}>
+
 
 
       <LastPrograms programs={programs} title="برنامه های انجام شده"/>
