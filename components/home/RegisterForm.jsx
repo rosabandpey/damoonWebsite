@@ -1,5 +1,5 @@
 import { Box, Divider, FormLabel, Grid, Paper, Typography,} from "@mui/material";
-import React  from "react";
+import React, { useState }  from "react";
 import Controls from "../Controls/Controls";
 
 import { GENDER } from "./constant/Gender"
@@ -19,7 +19,11 @@ import { checkMobile } from "./util/checkMobile";
 export default function RegisterForm({ onSubmit }) {
  
 
-
+  const [alert, setAlert] = useState(false);
+  const [checkAlert, setCheckAlert] = useState(false);
+  const [labelAlert, setLabelAlert] = useState("");
+  const [severity, setSeverity] = useState("success");
+ 
 
 
   const schema = yup
@@ -51,7 +55,11 @@ export default function RegisterForm({ onSubmit }) {
 
   const onFormSubmit = (data) => {
     console.log(data)
-   
+  
+    setSeverity('success');
+    setAlert(true);
+    setLabelAlert('عملیات با موفقیت انجام شد');
+    setCheckAlert((prev) => !prev);
   };
 
  
@@ -209,7 +217,14 @@ const selectListGeneratorArray = [
   
    
 
-    
+    {alert && (
+        <Controls.Toastify
+          position="bottom-center"
+          type={severity}
+          label={labelAlert}
+          alert={checkAlert}
+        />
+      )}
        
 
     

@@ -90,6 +90,10 @@
   font-family: "IRANSans";
 }
 
+.slider_card_container .card_content .card_button {
+  font-family: "IRANSans" !important;
+}
+
 .slider_card_container .card_content .card_heading {
   font-size: 14px;
   line-height: 24px;
