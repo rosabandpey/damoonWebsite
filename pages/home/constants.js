@@ -1,7 +1,9 @@
 import abasabad from "../../assets/img/asbasabad.jpeg";
 import miankale from "../../assets/img/miankale.jpg";
 import yazd from "../../assets/img/yazd.jpg";
+import geer from '../../assets/img/geer.jpg'
 import gheshm from "../../assets/img/gheshm.jpeg";
+import watch from '../../assets/img/watch.jpg'
 import introBanner from "../../assets/img/banner-2.png";
 import relSiteLogo1 from "../../assets/img/otherWebsites/Codal.png";
 import relSiteLogo2 from "../../assets/img/otherWebsites/fanavari.png";
@@ -59,7 +61,7 @@ export const educationalContents = [
   {
     title: "نحوه تعویض دنده",
 
-    src: yazd,
+    src: geer,
 
     link: "#",
     description:"این سفر در اسفند ماه 1401 برگزار شد"
@@ -67,7 +69,7 @@ export const educationalContents = [
   {
     title: "شستشوی دوچرخه",
 
-    src: gheshm,
+    src: watch,
 
     link: "#",
     description:"این سفر در بهمن ماه 1401 برگزار شد"
