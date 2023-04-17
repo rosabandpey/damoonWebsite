@@ -59,6 +59,7 @@ export default function OutlinedInput({
 
               sx={{
                 height: "40px",
+                fontFamily: "IRANSans",
                 "& .muirtl-1d3z3hw-MuiOutlinedInput-notchedOutline": {
                   borderColor: "#d1cece",
                   borderWidth: "2px",
