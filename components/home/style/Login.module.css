@@ -23,6 +23,11 @@
 
 .formButton {
   margin: 10px;
+  text-align: center;
   width: 40%;
+}
+
+.aButton {
+  color: #717886;
 }
 /*# sourceMappingURL=Login.module.css.map */

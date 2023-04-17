@@ -128,7 +128,7 @@ export default function Login({ handleClose }) {
           className={styles.formButton}
         />
         
-        <a  className={styles.formButton} href="#">
+        <a  className={styles.aButton} href="#">
     فراموشی رمز عبور
         </a>
       
