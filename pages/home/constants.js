@@ -4,6 +4,8 @@ import yazd from "../../assets/img/yazd.jpg";
 import geer from '../../assets/img/geer.jpg'
 import gheshm from "../../assets/img/gheshm.jpeg";
 import watch from '../../assets/img/watch.jpg'
+import taft from '../../assets/img/taft.jpg'
+import hamegani from '../../assets/img/hamegani.jpg'
 import introBanner from "../../assets/img/banner-2.png";
 import relSiteLogo1 from "../../assets/img/otherWebsites/Codal.png";
 import relSiteLogo2 from "../../assets/img/otherWebsites/fanavari.png";
@@ -64,7 +66,7 @@ export const educationalContents = [
     src: geer,
 
     link: "#",
-    description:"این سفر در اسفند ماه 1401 برگزار شد"
+    description:"آموزش نحوه و زمان تعویض دنده دوچرخه"
   },
   {
     title: "شستشوی دوچرخه",
@@ -72,7 +74,7 @@ export const educationalContents = [
     src: watch,
 
     link: "#",
-    description:"این سفر در بهمن ماه 1401 برگزار شد"
+    description:"نکاتی در مورد نظافت دوچرخه"
   },
 ];
 
@@ -81,18 +83,18 @@ export const weblogContents = [
   {
     title: "مسیر دوچرخه یزد به تفت",
 
-    src: yazd,
+    src: taft,
 
     link: "#",
-    description:"این سفر در اسفند ماه 1401 برگزار شد"
+    description:"جاده سلامت یزد – تفت افتتاح شد"
   },
   {
     title: "رکاب زنی همگانی شهر تهران",
 
-    src: gheshm,
+    src: hamegani,
 
     link: "#",
-    description:"این سفر در بهمن ماه 1401 برگزار شد"
+    description:"بیدود، تجربه ای که هنوز قضاوت نمی توان کرد"
   },
 ];
 

@@ -31,7 +31,7 @@ export default function MediaCard({title,src,description,link}) {
      
       </CardContent>
       <CardActions>
-        <Button size="small">more</Button>
+        <Button size="small" sx={{  fontFamily: "IRANSans" }} >بیشتر</Button>
        
       </CardActions>
     </Card>
