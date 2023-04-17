@@ -1,4 +1,4 @@
-import { Box, Grid, Paper,} from "@mui/material";
+import { Box, Divider, FormLabel, Grid, Paper, Typography,} from "@mui/material";
 import React  from "react";
 import Controls from "../Controls/Controls";
 
@@ -12,8 +12,11 @@ import styles from './style/Register.module.css'
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
+import { BlOOD_GROUP } from "./constant/BloodGroup";
+import { checkNationalCode } from "./util/checkNationalCode";
+import { checkMobile } from "./util/checkMobile";
 
-export default function RegisterForm() {
+export default function RegisterForm({ onSubmit }) {
  
 
 
@@ -24,7 +27,15 @@ export default function RegisterForm() {
       gender: yup.string().required("لطفا جنسیت را انتخاب کنید"),
       lastName: yup.string().required("لطفا نام خانوادگی را وارد کنید"),
       firstName: yup.string().required("لطفا نام را وارد کنید"),
-  
+      nationalCode: yup
+      .string().required("کد ملی را وارد نمایید")
+      .test("nationlaCode", "کد ملی اشتباه است", (value) =>
+        checkNationalCode(value)
+      ),
+      mobile: yup
+      .string().required("موبایل را وارد نمایید")
+      .matches(checkMobile, "فرمت موبایل اشتباه است")
+      
     })
     .required();
 
@@ -48,96 +59,162 @@ export default function RegisterForm() {
 
 
 
+  const inputListGeneratorArray = [
+    { title: "نام", name: "firstName" },
+    {
+      title: "نام خانوادگی",
+      name: "lastName",
+    
+     
+    },
+    {
+      title: "کدملی",
+      name: "nationalCode",
+      type: "number",
+     
+     
+    },
+    {
+      title: "شماره موبایل",
+      name: "mobile",
+      type: "number",
+      
+     
+    },
+]
 
+
+
+const inputLeftSideListGeneratorArray = [
+    { title: "تابعیت", name: "nationality" },
+    {
+      title: "قد",
+      name: "height",
+    
+     
+    },
+    {
+      title: "موقعیت جغرافیایی عرض",
+      name: "latitude",
+    
+     
+     
+    },
+    {
+      title: "موقعیت جغرافیایی طول",
+      name: "longitude",
+     
+      
+     
+    },
+]
+
+const selectListGeneratorArray = [
+   
+    { title: "جنسیت", options: GENDER, name: "gender", },
+    { title: "گروه خونی", options: BlOOD_GROUP, name: "gender", },
+  ];
 
   console.log("errors", errors);
 
   return (
     <>
     
-    <Grid container component={Paper} className={styles.formGrid}>
-        
-
-          <Box className={styles.boxDiv}>
-            <Controls.OutlinedInput
-              label="نام"
-              name="firstName"
-              control={control}
-              errors={errors.firstName}
-              className={styles.input}
-            
-            />
-
-            <Controls.OutlinedInput
-              control={control}
-              label="نام خانوادگی"
-              name="lastName"
-              errors={errors.lastName}
-              className={styles.input}
-           
-            />
-          </Box>
-
-          <Box className={styles.boxDivName}>
-            <Controls.OutlinedInput
-              control={control}
-              label="کدملی"
-              name="nationalCode"
-              errors={errors.nationalCode}
-              className={styles.input}
-            
-            />
-
-            <Controls.OutlinedInput
-              control={control}
-              label="شماره موبایل"
-              name="mobile"
-              errors={errors.mobile}
-              className={styles.input}
-             
-            />
-          </Box>
-
-         
-        
-          <Box className={styles.boxDivGender}>
-            
-            <Controls.Select
-              label="جنسیت"
-              name="gender"
-              options={GENDER}
-              className={styles.input}
-              control={control}
-              errors={errors.gender}
-            
-            />
-
-<Controls.OutlinedInput
-              label="آدرس"
-              name="address"
-              control={control}
-              errors={errors.firstName}
-              className={styles.input}
-            
-            />
-
-          </Box>
-      
-
-         
-        </Grid>
-      
+        <Typography id="modal-modal-title" variant="h6" component="h2"  sx={{
+            mb: 1,
+            fontFamily: "IRANSans",
+            color: "#3F4756",
+            fontSize:23
+          }}>
+     ثبت نام کاربران
+    </Typography>
+    <Grid container  spacing={4}>
      
-      <Box className={styles.formButtonBox}>
-        <Controls.CustomButton
+        
+        {inputListGeneratorArray.map((itm, idx) => {
+                return (
+                  <>
+                  
+                     
+                  <Grid item xs={6} >
+                          <Controls.OutlinedInput
+                            control={control}
+                            label={itm.title}
+                            name={itm.name}
+                            
+                            errors={errors[itm.name]}
+                           
+                          />
+                        
+                        </Grid>
+                    
+                    
+                  </>
+                );
+              })}
+               {inputLeftSideListGeneratorArray.map((itm, idx) => {
+                return (
+                  <>
+                  
+                     
+                  <Grid item xs={6} >
+                          <Controls.OutlinedInput
+                            control={control}
+                            label={itm.title}
+                            name={itm.name}
+                            
+                            errors={errors[itm.name]}
+                           
+                          />
+                        
+                        </Grid>
+                    
+                    
+                  </>
+                );
+              })}
+              
+{selectListGeneratorArray.map((itm, idx) => {
+                return (
+                  <>
+                    
+                    
+                    <Grid item xs={6} >
+                          <Controls.Select
+                            options={itm.options}
+                            name={itm.name}
+                            label={itm.title}
+                            control={control}
+                            errors={errors[itm.name]}
+                           
+                           
+                          />
+                       </Grid>
+                     
+                    
+                  </>
+                );
+              })}
+      <Grid item xs={2} >
+    <Controls.CustomButton
           md={6}
           xs={6}
-          text="مرحله بعد"
+          text="ثبت نام"
           onClick={handleSubmit(onFormSubmit)}
           type="submit"
           className={styles.formButton}
         />
-      </Box>
+        </Grid>
+    </Grid>
+  
+   
+
+    
+       
+
+    
+  
+              
     </>
   );
 }

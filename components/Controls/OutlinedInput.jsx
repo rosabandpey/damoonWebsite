@@ -25,6 +25,7 @@ export default function OutlinedInput({
       <FormControl
         fullWidth
         sx={{
+          fontFamily: "IRANSans",
           "& .MuiFormHelperText-root": {
             color: "#BA372E !important",
             fontSize: "12px",
@@ -38,7 +39,7 @@ export default function OutlinedInput({
         <FormLabel
           sx={{
             mb: 1,
-
+            fontFamily: "IRANSans",
             color: "#3F4756",
           }}
         >
@@ -75,7 +76,7 @@ export default function OutlinedInput({
             />
           )}
         />
-        {errors && <FormHelperText>{errors.message}</FormHelperText>}
+        {errors && <FormHelperText sx={{ fontFamily: "IRANSans",}}>{errors.message}</FormHelperText>}
       </FormControl>
     </Box>
   );

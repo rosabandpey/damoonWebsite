@@ -13,6 +13,7 @@ export default function CustomButton(props) {
       fullWidth
       disabled={disabled}
       {...other}
+      sx={{fontFamily: "IRANSans"}}
     >
       {text}
     </Button>

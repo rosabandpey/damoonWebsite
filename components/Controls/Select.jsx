@@ -28,10 +28,11 @@ export default function Select({
             color: "#BA372E !important",
             fontSize: "12px",
             borderWidth: 2,
+            fontFamily: "IRANSans"
           },
         }}
       >
-        <FormLabel sx={{ mb: 1, color: "#3F4756" }}>{label}</FormLabel>
+        <FormLabel sx={{ mb: 1, color: "#3F4756" ,fontFamily: "IRANSans"}}>{label}</FormLabel>
         <Controller
           defaultValue={defaultValue || ""}
           control={control}
@@ -47,7 +48,7 @@ export default function Select({
               placeholder={label}
               sx={{
                 height: "40px",
-
+                fontFamily: "IRANSans",
                 ".MuiOutlinedInput-notchedOutline": {
                   borderColor: "#d1cece",
                   borderWidth: "2px",
@@ -66,7 +67,7 @@ export default function Select({
               }}
             >
               {options.map((item) => (
-                <MenuItem key={item.id} value={item.id}>
+                <MenuItem key={item.id} value={item.id} sx={{fontFamily: "IRANSans"}}>
                   {item.title}
                 </MenuItem>
               ))}
