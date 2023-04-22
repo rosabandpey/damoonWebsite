@@ -47,7 +47,7 @@ export default function Slider(props) {
                     spaceBetween: 50
                 }
             }}
-            className={styles.slider_component_container}
+           
         >
             {
                 (props.children || []).map((child, i) => (

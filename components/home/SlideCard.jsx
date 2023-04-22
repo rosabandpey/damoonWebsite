@@ -8,13 +8,13 @@ export default function SlideCard(props) {
 
     return (
         <div className={styles.slider_card_container}>
-            <figure className={styles.card_banner}>
+           
                 <Image
                     src={cardData?.banner?.src}
                     alt={cardData?.banner?.alt}
                 />
-            </figure>
-            <div className={styles.card_content}>
+           
+           
                 <h3 className={styles.card_title}>
                     {cardData?.title}
                 </h3>
@@ -31,7 +31,7 @@ export default function SlideCard(props) {
                         ثبت نام
                     </a>
                 </div>
-            </div>
+          
         </div>
     );
 }
