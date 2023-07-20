@@ -1,10 +1,8 @@
 import styles from './style/footer.module.scss'
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import TelegramIcon from '@mui/icons-material/Telegram';
 import InstagramIcon from '@mui/icons-material/Instagram';
-import Image from 'next/image'
 import Link from 'next/link';
-// import './style/footer.less'
+
 
 export default function Footer(props) {
 

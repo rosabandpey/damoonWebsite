@@ -1,6 +1,6 @@
 import HomePage from './home/HomePage.page'
 import {sample,introSectionData,relatedSiteData,lastPrograms} from '../pages/home/constants'
-import Head from 'next/head'
+
 
 export default function Home({slideData,introSectionData,relatedSiteData,programs}) {
   return (

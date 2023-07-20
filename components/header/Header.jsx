@@ -1,10 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import ReorderIcon from '@mui/icons-material/Reorder';
 import styles from './style/header.module.scss'
-import { menuList, megaMenuData } from './constants';
-import chartImg from '../../assets/img/candle-chart.svg';
+import { menuList } from './constants';
 import logo from '../../assets/img/logo.jpg';
-// import './style/header.less';
 import Image from 'next/image'
 import Link from 'next/link';
 import CustomModal from '../modal/CustomModal';
@@ -15,7 +12,7 @@ export default function Header(props) {
     const [menuCat, setMenuCat] = useState(null);
     const [navOpened, setNavOpened] = useState(false);
     const [open, setOpen] = useState(false);
-    const handleOpen = () => setOpen(true);
+    
     const handleClose = () => setOpen(false);
     useEffect(() => {
         // add when mounted
@@ -96,7 +93,7 @@ export default function Header(props) {
                         ثبت نام
                         </a>
                         <span className={styles.toggle_btn} onClick={toggleNav}>
-                            <ReorderIcon />
+                           
                         </span>
                     </div>
                 </nav>
